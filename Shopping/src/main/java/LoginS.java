@@ -5,18 +5,27 @@ import java.io.*;
 import dao.Shopdao.*;
 import login.Login;
 import javax.servlet.annotation.*;
+import java.util.stream.Collectors;
+import java.util.stream.Collectors.*;
 @WebServlet("/login")
 public class LoginS extends HttpServlet
 {
     String uname,pass;
+    ShopMethod sp=new ShopMethod();
         public void doGet(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException
         {
+            PrintWriter pw=res.getWriter();
             uname=req.getParameter("username");
             pass=req.getParameter("password");
-            ///List<Login> log_test=new ArrayList<Login>();
-           // log_test.add(ShopMethod.login(uname,pass));
-            PrintWriter pw=res.getWriter();
-            pw.println(log_test);     
-
+             Long flag=(sp.login(uname,pass)).stream().filter(x->x.getUsername().equals(uname)).filter(v->v.getPassword().equals(pass)).collect(Collectors.counting());
+            if(flag!=0)
+            {
+                res.sendRedirect("v.jsp");
+                pw.println("<h1>Login Successfully!!!</h1>");
+            }
+            else
+            {
+                pw.println("Invalid username or password");
+            }
         }
 }

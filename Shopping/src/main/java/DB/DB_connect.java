@@ -2,22 +2,20 @@ package DB;
 import java.sql.*;
 public class DB_connect
 {
-  static Connection conn=null;
+  static Connection conn;
     public static Connection getConn()
     {
         try
         {
-        if(conn==null)
-        {
             Class.forName("com.mysql.jdbc.Driver");
             conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping","root","");
         }
-    }
+    
     catch(Exception ex)
     {
         ex.printStackTrace();
     }
-    finally
+   /* finally
     {
         try
         {
@@ -27,7 +25,7 @@ public class DB_connect
     {
         ex.printStackTrace();
     }
+    }*/
+       return conn;
     }
-    return conn;
     }
-}
