@@ -1,4 +1,5 @@
 DB\DB_connect.class
+Register.class
 dao\Shopdao.class
 LoginS.class
 ShopMethod.class

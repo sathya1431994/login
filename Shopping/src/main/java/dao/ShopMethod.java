@@ -28,4 +28,21 @@ public class ShopMethod implements Shopdao
         }
          return log;
     }
+
+        public void register(Login l)
+        {
+            try
+            {
+                PreparedStatement ps=con.prepareStatement("insert into login(username,password,email) values(?,?,?)");
+                ps.setString(1,l.getUsername());
+                 ps.setString(2,l.getPassword());
+                  ps.setString(3,l.getEmail());
+                  ps.executeUpdate();
+            }
+            catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        }
+
 }

@@ -17,10 +17,12 @@ public class LoginS extends HttpServlet
             PrintWriter pw=res.getWriter();
             uname=req.getParameter("username");
             pass=req.getParameter("password");
-             Long flag=(sp.login(uname,pass)).stream().filter(x->x.getUsername().equals(uname)).filter(v->v.getPassword().equals(pass)).collect(Collectors.counting());
+            Long flag=(sp.login(uname,pass)).stream().filter(x->x.getUsername().equals(uname)).filter(v->v.getPassword().equals(pass)).collect(Collectors.counting());
             if(flag!=0)
             {
-                res.sendRedirect("v.jsp");
+                HttpSession session=req.getSession();
+                session.setAttribute("uname",uname);
+                res.sendRedirect("index.jsp");
                 pw.println("<h1>Login Successfully!!!</h1>");
             }
             else
