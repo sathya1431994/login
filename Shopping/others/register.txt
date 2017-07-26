@@ -1,0 +1,25 @@
+  <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" align="center">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Register Details</h4>
+      </div>
+      <div class="modal-body">
+      <form action="register" method="GET">
+       username <input type="text" place holder="username..." name="username"></br></br>
+       password <input type="text" place holder="password..." name="password"></br></br>
+       Email <input type="text" place holder="Email..." name="email"></br></br>
+       <button type="submit" name="reg_btn" class="btn btn-primary btn-sm">Register</button> &nbsp&nbsp
+       <button type="reset" name="clear_btn"  class="btn btn-danger btn-sm">Cancel</button></br></br>
+       </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>

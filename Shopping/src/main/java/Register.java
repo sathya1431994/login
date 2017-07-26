@@ -15,18 +15,16 @@ public class Register extends HttpServlet
         public void doGet(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException
         {
              PrintWriter pw=res.getWriter();
-            uname=req.getParameter("reg_uname");
-            pass=req.getParameter("reg_pass");
-            email=req.getParameter("reg_email");
+            uname=req.getParameter("username");
+            pass=req.getParameter("password");
+            email=req.getParameter("email");
             Login l1=new Login();
             l1.setUsername(uname);
              l1.setPassword(pass);
              l1.setEmail(email);
              sp1.register(l1);
-           //  RequestDispatcher rd=request.getRequestDispatcher("/login");
-           // rd.forward(request, response);     
-        //response.sendRedirect("index.jsp");
-             res.sendRedirect("index.jsp");
-             pw.println("Record inserted successfully...");
+            RequestDispatcher rd=req.getRequestDispatcher("/login"); 
+             rd.forward(req, res);
+         
   }
 }

@@ -1,6 +1,7 @@
+dao\Shopdao.class
+Logout.class
 DB\DB_connect.class
 Register.class
-dao\Shopdao.class
 LoginS.class
 ShopMethod.class
 login\Login.class

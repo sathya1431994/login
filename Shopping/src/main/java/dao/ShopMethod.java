@@ -43,6 +43,22 @@ public class ShopMethod implements Shopdao
         {
             ex.printStackTrace();
         }
+    }
+   /* public void order()
+    {
+        try
+            {
+                Statement st=con.createStatement();
+                ResultSet rs=st.executeQuery("Select Gname,Gprice from Order_details"); 
+                while(rs.next())
+                 {
+            pw.println("<tr><td>"+r.getString(1)+"</td><td>"+r.getString(2)+"</td><td>"+"<a href=delete?id="+r.getString(1)+">Buy Now</a>"+"</td><td>");
+                 }
+            }
+            catch(Exception ex)
+        {
+            ex.printStackTrace();
         }
+    }*/
 
 }
