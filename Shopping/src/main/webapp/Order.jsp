@@ -12,7 +12,7 @@
 <header class="well well-sm">
 <h2 align="center">Form</h2>
 <div class="dropdown">
-  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">	<%=  request.getAttribute("user")  %>
+  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">	<%=  request.getSession().getAttribute("uname")  %>
 
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
@@ -21,22 +21,8 @@
   </ul>
 </div>
 </header>
- <table class="table">
-    <thead>
-      <tr>
-        <th>Games</th>
-        <th>Price</th>
-        <th>Buy</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<form action="order" method="Get" align="center" class="form">
+<button class="btn btn-primary" type="submit" >Go to Buy</button>
+</form>
  </body>
 </html>

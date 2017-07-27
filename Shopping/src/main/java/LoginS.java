@@ -4,6 +4,7 @@ import java.util.*;
 import java.io.*;
 import dao.Shopdao.*;
 import login.Login;
+import order.Order;
 import javax.servlet.annotation.*;
 import java.util.stream.Collectors;
 import java.util.stream.Collectors.*;
@@ -21,13 +22,12 @@ public class LoginS extends HttpServlet
             if(flag!=0)
             {
                pw.println("<h3>Welcome"+"-"+uname+"</h3>");
-                HttpSession session=req.getSession();
-                session.setAttribute("uname",uname);
-              //  res.sendRedirect("index.jsp");
+          
               RequestDispatcher rd=req.getRequestDispatcher("Order.jsp");
-              req.setAttribute("user",uname);
+             HttpSession session=req.getSession();
+             session.setAttribute("uname",uname);
              rd.forward(req,res);
-               pw.println("<h1>Login Successfully!!!</h1>");
+              // pw.println("<h1>Login Successfully!!!</h1>");
             }
             else
             {

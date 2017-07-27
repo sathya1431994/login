@@ -33,15 +33,15 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https1://raw.githubusercontent.com/vengatesanns/Games/master/58PkFh.jpg" alt="Los Angeles">
+      <img src="https://raw.githubusercontent.com/vengatesanns/Games/master/58PkFh.jpg" alt="Los Angeles">
     </div>
 
     <div class="item">
-      <img src="http1s://raw.githubusercontent.com/vengatesanns/Games/master/39db46948dee5b800bb35319c57c2a0d.jpg" alt="Chicago">
+      <img src="https://raw.githubusercontent.com/vengatesanns/Games/master/39db46948dee5b800bb35319c57c2a0d.jpg" alt="Chicago">
     </div>
 
     <div class="item">
-      <img src="https1://raw.githubusercontent.com/vengatesanns/Games/master/Battlefield%20bad%20company%20widescreen%20wallpapers%20of%20high%20resolution.jpg" alt="New York">
+      <img src="https://raw.githubusercontent.com/vengatesanns/Games/master/Battlefield%20bad%20company%20widescreen%20wallpapers%20of%20high%20resolution.jpg" alt="New York">
     </div>
   </div>
 
