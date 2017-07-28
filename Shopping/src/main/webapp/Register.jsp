@@ -10,7 +10,7 @@
 <body>
 
 <header class="well well-sm">
-<h2 align="center">Form</h2>
+<h2 align="center">Gamerz World</h2>
 </header>
 
 
@@ -18,7 +18,7 @@
     <div class="login">
 <h2 align="center">Login</h2>
 
-<form action="login" method="GET" align="center">
+<form action="admin_op.jsp" method="GET" align="center">
     Username <input type="text" name="username" placeholder="username..."><span class="glyphicon glyphicon-user"></span></br></br>
    Password <input type="password" name="password" placeholder="password..."><span class="glyphicons glyphicons-lock"></span></br></br>
     <button type="submit" name="login_btn" class="btn btn-primary btn-sm">Login</button> &nbsp&nbsp

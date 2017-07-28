@@ -1,4 +1,4 @@
-import javax.servlet.*;
+/*import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.*;
 import java.io.*;
@@ -21,12 +21,13 @@ public class LoginS extends HttpServlet
             Long flag=(sp.login(uname,pass)).stream().filter(x->x.getUsername().equals(uname)).filter(v->v.getPassword().equals(pass)).collect(Collectors.counting());
             if(flag!=0)
             {
-               pw.println("<h3>Welcome"+"-"+uname+"</h3>");
-          
+              // pw.println("<h3>Welcome"+"-"+uname+"</h3>");
+                //res.sendRedirect("/Order.jsp");
               RequestDispatcher rd=req.getRequestDispatcher("Order.jsp");
+              rd.include(req,res);
              HttpSession session=req.getSession();
              session.setAttribute("uname",uname);
-             rd.forward(req,res);
+            
               // pw.println("<h1>Login Successfully!!!</h1>");
             }
             else
@@ -35,3 +36,4 @@ public class LoginS extends HttpServlet
             }
         }
 }
+*/

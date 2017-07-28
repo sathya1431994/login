@@ -15,6 +15,9 @@ public class Orderdetails extends HttpServlet
       ShopMethod sp=new ShopMethod();
      public void doGet(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException
         {
+            Object session=req.getSession(false).getAttribute("uname");
+            if(session==session)
+            {
             try
             {
             PrintWriter pw=res.getWriter();
@@ -32,6 +35,11 @@ public class Orderdetails extends HttpServlet
         {
             ex.printStackTrace();
         }
+            }
+            else
+            {
+                res.sendRedirect("index.jsp");
+            }
  }
 
 }

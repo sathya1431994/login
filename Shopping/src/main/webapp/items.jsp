@@ -10,7 +10,7 @@
 <body onload='onload();'>
 
 <header class="well well-sm">
-<h2 align="center">Form</h2>
+<h2 align="center">Gamerz World</h2>
 <div class="dropdown">
   <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">	<%=  request.getSession().getAttribute("uname")  %>
 

@@ -55,7 +55,7 @@ return new PasswordAuthentication(username, password);
 });
 try {
 Message message = new MimeMessage(session);
-message.setFrom(new InternetAddress("nirmalkumar.m@kggroup.com"));
+message.setFrom(new InternetAddress("vengatesan.n@kggroup.com"));
 message.setRecipients(Message.RecipientType.TO,
 InternetAddress.parse("vengatesan.n@kggroup.com"));
 message.setSubject("A testing mail header !!!");

@@ -8,11 +8,13 @@
 </head>
 
 <body>
-
+<%
+ Object uname = request.getSession().getAttribute("uname");
+%>
 <header class="well well-sm">
-<h2 align="center">Form</h2>
+<h2 align="center">Gamerz World</h2>
 <div class="dropdown">
-  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">	<%=  request.getAttribute("user")  %>
+  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">		<% out.print(uname); %>
 
   <span class="caret"></span></button>
   <ul class="dropdown-menu">

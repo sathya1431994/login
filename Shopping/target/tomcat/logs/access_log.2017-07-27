@@ -300,3 +300,8 @@
 0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:33:18 +0530] "GET /login?username=vengat&password=123&login_btn= HTTP/1.1" 200 980 http-bio-8888-exec-4 4796
 0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:33:20 +0530] "GET /order? HTTP/1.1" 200 785 http-bio-8888-exec-5 56
 0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:33:25 +0530] "GET /mail? HTTP/1.1" 405 1065 http-bio-8888-exec-6 4
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:35:43 +0530] "GET / HTTP/1.1" 200 2252 http-bio-8888-exec-1 120
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:35:49 +0530] "GET /Register.jsp HTTP/1.1" 200 2394 http-bio-8888-exec-2 8
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:35:57 +0530] "GET /login?username=vengat&password=123&login_btn= HTTP/1.1" 200 980 http-bio-8888-exec-3 1450
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:36:00 +0530] "GET /order? HTTP/1.1" 200 785 http-bio-8888-exec-4 48
+0:0:0:0:0:0:0:1 - - [27/Jul/2017:19:36:07 +0530] "GET /mail? HTTP/1.1" 200 - http-bio-8888-exec-5 959

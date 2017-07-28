@@ -12,7 +12,7 @@ public class Register extends HttpServlet
 {
     String uname,pass,email;
         ShopMethod sp1=new ShopMethod();
-        public void doGet(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException
+        public void doPost(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException
         {
              PrintWriter pw=res.getWriter();
             uname=req.getParameter("username");
